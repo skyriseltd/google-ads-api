@@ -2259,10 +2259,10 @@ globby@^11.0.3:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-google-ads-node@24.1.0-beta.0:
-  version "24.1.0-beta.0"
-  resolved "https://registry.yarnpkg.com/google-ads-node/-/google-ads-node-24.1.0-beta.0.tgz#11cf3b31117462f9e2ed41a98458e39e48100f2c"
-  integrity sha512-JUgYasCejGyDR1L7K6szqOXM+7GnpeH8RKH/l/s0KYqFWFTfbiR5U+HPM4cOqFy7s4lDezZr+B9kFROhs5jL+Q==
+google-ads-node@24.1.0:
+  version "24.1.0"
+  resolved "https://registry.yarnpkg.com/google-ads-node/-/google-ads-node-24.1.0.tgz#19d6f6ff456243ed2c01355e27970c2b94b079fa"
+  integrity sha512-qhPW5UBn9LB2Lmy/j3rUu4/T09fvpqK9xlMW5hRdpbwb0DfarCBr8AWn4ohgnygCeuP+3dMqfww2LyNNre2dxg==
   dependencies:
     google-gax "^5.0.7"
     lru-cache "^10.2.0"
