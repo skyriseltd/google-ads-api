@@ -22,10 +22,10 @@
 
 ### Fixes
 
-- `resource_name` attributes for nine view resources (including `keyword_view` and `paid_organic_search_term_view`) were missing from parsed results due to a code generation bug; they are now included.
+- `resource_name` attributes for ten view resources (including `keyword_view` and `paid_organic_search_term_view`) were missing from parsed results due to a code generation bug; they are now included.
 - `getFieldMask()` now throws a descriptive `Error` on objects containing circular references instead of overflowing the stack, and treats typed arrays (`Buffer`, `Uint8Array`) and `Long` values as leaf values. Previously, update masks built from payloads containing `Long` values included invalid `.low`/`.high`/`.unsigned` paths that the API rejected.
 - Report streams now destroy their underlying response stream and JSON parser when consumers exit iteration early
-- Evicted gRPC service clients are closed safely; rejected `close()` calls no longer leak channels
+- Rejected `close()` calls during gRPC service cache eviction are now caught instead of surfacing as unhandled promise rejections (the dispose callback was previously `async` and fire-and-forget)
 - Cached gRPC service clients past their TTL are no longer returned, and expired entries awaiting purge no longer resolve to `undefined`
 - `listAccessibleCustomers()` closes its one-shot `CustomerServiceClient` after the call instead of caching it
 
