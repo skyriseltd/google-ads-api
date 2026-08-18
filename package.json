@@ -1,6 +1,6 @@
 {
-  "name": "google-ads-api",
-  "version": "24.1.0",
+  "name": "@skyriseltd/google-ads-api",
+  "version": "25.1.0",
   "description": "Google Ads API Client Library for Node.js",
   "repository": "https://github.com/Opteo/google-ads-api",
   "main": "build/src/index.js",
@@ -19,11 +19,12 @@
   "license": "MIT",
   "dependencies": {
     "@isaacs/ttlcache": "^1.4.0",
-    "axios": "^1.6.7",
+    "@skyriseltd/google-ads-api": "link:",
+    "axios": "^1.19.0",
     "circ-json": "^1.0.4",
-    "google-ads-node": "24.1.0",
-    "google-auth-library": "^9.15.1",
-    "google-gax": "^5.0.7",
+    "google-ads-node": "npm:@skyriseltd/google-ads-node@25.1.0",
+    "google-auth-library": "^11.0.2",
+    "google-gax": "^6.0.2",
     "long": "^4.0.0",
     "stream-json": "^1.8.0"
   },
@@ -43,7 +44,7 @@
     "lodash": "^4.17.21",
     "pluralize": "^8.0.0",
     "prettier": "^3.6.2",
-    "protobufjs": "^7.2.6",
+    "protobufjs": "^8.7.2",
     "ts-jest": "^29.1.2",
     "tsx": "^4.19.3",
     "typescript": "^5.5.4"
@@ -61,7 +62,7 @@
     "gads"
   ],
   "resolutions": {
-    "google-auth-library": "^9.15.1"
+    "google-auth-library": "^11.0.2"
   },
-  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+  "packageManager": "pnpm"
 }
